@@ -1,5 +1,24 @@
 @extends('layouts.main')
 
+@section('screen')
+<!-- start start screen -->
+<div id="start-screen" class="start-screen start-screen--style-2">
+    <div id="start-screen__bg" class="start-screen__bg" style="background-image: url(asset/images/home_img/home_bg.jpg);background-position: 70% 0;"></div>
+    <div id="start-screen__content-container" class="start-screen__content-container">
+        <div class="start-screen__content__item is-active  align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h2 class="__title">Organic Food</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end start screen -->
+@endsection
+
 @section('content')
     <!-- start section -->
     <section class="section">
@@ -256,7 +275,7 @@
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-12 col-md-6 align-self-md-stretch">
                                         <figure class="__image">
-                                            <img class="lazy" src="img/blank.gif" data-src="img/recipes_img/1.jpg" alt="demo" />
+                                            <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/recipes_img/1.jpg')}}" alt="demo" />
                                         </figure>
                                     </div>
 
@@ -276,7 +295,7 @@
                                 <div class="row flex-md-row-reverse no-gutters align-items-center">
                                     <div class="col-12 col-md-6 align-self-md-stretch">
                                         <figure class="__image">
-                                            <img class="lazy" src="img/blank.gif" data-src="img/recipes_img/3.jpg" alt="demo" />
+                                            <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/recipes_img/3.jpg')}}" alt="demo" />
                                         </figure>
                                     </div>
 
@@ -300,7 +319,7 @@
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-12 col-md-6 align-self-md-stretch">
                                         <figure class="__image">
-                                            <img class="lazy" src="img/blank.gif" data-src="img/recipes_img/2.jpg" alt="demo" />
+                                            <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/recipes_img/2.jpg')}}" alt="demo" />
                                         </figure>
                                     </div>
 
@@ -320,7 +339,7 @@
                                 <div class="row flex-md-row-reverse no-gutters align-items-center">
                                     <div class="col-12 col-md-6 align-self-md-stretch">
                                         <figure class="__image">
-                                            <img class="lazy" src="img/blank.gif" data-src="img/recipes_img/4.jpg" alt="demo" />
+                                            <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/recipes_img/4.jpg')}}" alt="demo" />
                                         </figure>
                                     </div>
 
@@ -347,10 +366,10 @@
     <!-- start section -->
     <section class="section section--no-pt section--no-pb">
         <!-- start banner simple -->
-        <div class="simple-banner simple-banner--style-3" data-aos="fade" data-aos-offset="50">
+        <div class="simple-banner simple-banner--style-3" style="background-image: url('asset/images/banner_bg_2.png') !important;" data-aos="fade" data-aos-offset="50">
 
             <div class="__label" data-aos="zoom-in" data-delay="700">
-                <img class="lazy" data-src="img/banner_label_2.png" alt="demo" />
+                <img class="lazy" data-src="{{asset('asset/images/banner_label_2.png')}}" alt="demo" />
             </div>
 
             <div class="container">
@@ -392,7 +411,7 @@
                                 <div class="d-table">
                                     <div class="d-table-cell align-middle">
                                         <i class="__ico">
-                                            <img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_8.png" alt="demo" />
+                                            <img class="img-fluid  lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/ico/ico_count_8.png')}}" alt="demo" />
                                         </i>
                                     </div>
 
@@ -412,7 +431,7 @@
                                 <div class="d-table">
                                     <div class="d-table-cell align-middle">
                                         <i class="__ico">
-                                            <img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_9.png" alt="demo" />
+                                            <img class="img-fluid  lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/ico/ico_count_9.png')}}" alt="demo" />
                                         </i>
                                     </div>
 
@@ -432,7 +451,7 @@
                                 <div class="d-table">
                                     <div class="d-table-cell align-middle">
                                         <i class="__ico">
-                                            <img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_10.png" alt="demo" />
+                                            <img class="img-fluid  lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/ico/ico_count_10.png')}}" alt="demo" />
                                         </i>
                                     </div>
 
@@ -452,7 +471,7 @@
                                 <div class="d-table">
                                     <div class="d-table-cell align-middle">
                                         <i class="__ico">
-                                            <img class="img-fluid  lazy" src="img/blank.gif" data-src="img/ico/ico_count_11.png" alt="demo" />
+                                            <img class="img-fluid  lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/ico/ico_count_11.png')}}" alt="demo" />
                                         </i>
                                     </div>
 
@@ -482,13 +501,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/13.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/13.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Testy Jam</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/13.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/13.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -498,13 +517,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/14.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/14.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Cristmas Sweets</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/14.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/14.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -514,13 +533,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/15.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/15.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Awesome Dishes</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/15.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/15.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -530,13 +549,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/16.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/16.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Tasty Desert</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/16.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/16.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -546,13 +565,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/17.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/17.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Nuts</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/17.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/17.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -562,13 +581,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/18.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/18.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Jam</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/18.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/18.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -578,13 +597,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/19.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/19.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Honey</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/19.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/19.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -594,13 +613,13 @@
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="__item">
                             <figure class="__image">
-                                <img class="lazy" src="img/blank.gif" data-src="img/gallery_img/20.jpg" alt="demo"/>
+                                <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/gallery_img/20.jpg')}}" alt="demo"/>
 
                                 <div class="__content">
                                     <h5 class="__content__title">Bread</h5>
                                 </div>
 
-                                <a class="__link" data-fancybox="gallery" href="img/gallery_img/20.jpg"></a>
+                                <a class="__link" data-fancybox="gallery" href="{{asset('asset/images/gallery_img/20.jpg')}}"></a>
                             </figure>
                         </div>
                     </div>
@@ -613,7 +632,7 @@
 
     <!-- start section -->
     <section class="section section--dark-bg section--review jarallax" data-speed="0.5" data-img-position="50% 80%">
-        <img class="jarallax-img  lazy" data-src="img/bg_2.jpg" alt="demo" />
+        <img class="jarallax-img  lazy" data-src="{{asset('asset/images/bg_2.jpg')}}" alt="demo" />
 
         <div class="container">
             <div class="section-heading section-heading--white section-heading--center" data-aos="fade">
@@ -663,7 +682,7 @@
                         <div class="review__item__author  d-table">
                             <div class="d-table-cell align-middle">
                                 <div class="review__item__author-image">
-                                    <img class="circled" src="img/ava.png" alt="ava" />
+                                    <img class="circled" src="{{asset('asset/images/ava.png')}}" alt="ava" />
                                 </div>
                             </div>
 
@@ -698,7 +717,7 @@
                         <div class="col-12 col-sm-6 col-lg-4">
                             <div class="__item __item--preview" data-aos="flip-up" data-aos-delay="100" data-aos-offset="0">
                                 <figure class="__image">
-                                    <img class="lazy" src="img/blank.gif" data-src="img/posts_img/7.jpg" alt="demo" />
+                                    <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/posts_img/7.jpg')}}" alt="demo" />
 
                                     <span class="__overlay"></span>
 
@@ -720,7 +739,7 @@
                         <div class="col-12 col-sm-6 col-lg-4">
                             <div class="__item __item--preview" data-aos="flip-up" data-aos-delay="200" data-aos-offset="0">
                                 <figure class="__image">
-                                    <img class="lazy" src="img/blank.gif" data-src="img/posts_img/8.jpg" alt="demo" />
+                                    <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/posts_img/8.jpg')}}" alt="demo" />
 
                                     <span class="__overlay"></span>
 
@@ -742,7 +761,7 @@
                         <div class="col-12 col-sm-6 col-lg-4">
                             <div class="__item __item--preview" data-aos="flip-up" data-aos-delay="300" data-aos-offset="0">
                                 <figure class="__image">
-                                    <img class="lazy" src="img/blank.gif" data-src="img/posts_img/9.jpg" alt="demo" />
+                                    <img class="lazy" src="{{asset('asset/images/blank.gif')}}" data-src="{{asset('asset/images/posts_img/9.jpg')}}" alt="demo" />
 
                                     <span class="__overlay"></span>
 
@@ -806,23 +825,23 @@
                         }
                     ]}'>
                     <div class="__item">
-                        <img class="img-fluid m-auto" src="img/partners_img/1.jpg" alt="demo" />
+                        <img class="img-fluid m-auto" src="{{asset('asset/images/partners_img/1.jpg')}}" alt="demo" />
                     </div>
 
                     <div class="__item">
-                        <img class="img-fluid m-auto" src="img/partners_img/2.jpg" alt="demo" />
+                        <img class="img-fluid m-auto" src="{{asset('asset/images/partners_img/2.jpg')}}" alt="demo" />
                     </div>
 
                     <div class="__item">
-                        <img class="img-fluid m-auto" src="img/partners_img/3.jpg" alt="demo" />
+                        <img class="img-fluid m-auto" src="{{asset('asset/images/partners_img/3.jpg')}}" alt="demo" />
                     </div>
 
                     <div class="__item">
-                        <img class="img-fluid m-auto" src="img/partners_img/4.jpg" alt="demo" />
+                        <img class="img-fluid m-auto" src="{{asset('asset/images/partners_img/4.jpg')}}" alt="demo" />
                     </div>
 
                     <div class="__item">
-                        <img class="img-fluid m-auto" src="img/partners_img/5.jpg" alt="demo" />
+                        <img class="img-fluid m-auto" src="{{asset('asset/images/partners_img/5.jpg')}}" alt="demo" />
                     </div>
                 </div>
             </div>
